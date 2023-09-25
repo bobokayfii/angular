@@ -1,0 +1,67 @@
+{
+  "productsList": [
+    {
+      "productName": "Iphone66",
+      "category": "iPhone",
+      "condition": "New",
+      "price": "100",
+      "date": "2023-09-29T21:00:00.000Z",
+      "comment": "Yahshi ishlatilgan baraka topasla osela",
+      "id": 1
+    },
+    {
+      "productName": "Samsung S6",
+      "category": "Samsung",
+      "condition": "Second hand",
+      "price": "300",
+      "date": "2023-12-19T21:00:00.000Z",
+      "comment": "Eski telefon",
+      "id": 2
+    },
+    {
+      "productName": "Huawei",
+      "category": "Redmi",
+      "condition": "New",
+      "price": "200",
+      "date": "2023-09-16T21:00:00.000Z",
+      "comment": "BR nma",
+      "id": 4
+    },
+    {
+      "productName": "sadasd",
+      "category": "iPhone",
+      "condition": "Second hand",
+      "price": "222",
+      "date": "2023-09-12T21:00:00.000Z",
+      "comment": "22222",
+      "id": 6
+    },
+    {
+      "productName": "iPhone 15",
+      "category": "iPhone",
+      "condition": "New",
+      "price": "4000",
+      "date": "2023-09-24T21:00:00.000Z",
+      "comment": "Bitta Sparkka barter bor\n",
+      "id": 7
+    },
+    {
+      "productName": "Samsung S7",
+      "category": "Samsung",
+      "condition": "Second hand",
+      "price": "300",
+      "date": "2023-12-19T21:00:00.000Z",
+      "comment": "Eski telefon",
+      "id": 8
+    },
+    {
+      "productName": "Samsung A51",
+      "category": "Samsung",
+      "condition": "New",
+      "price": "300",
+      "date": "2023-09-10T21:00:00.000Z",
+      "comment": "yengi",
+      "id": 9
+    }
+  ]
+}

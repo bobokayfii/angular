@@ -1,0 +1,51 @@
+<h1 mat-dialog-title>Add Product</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+ <mat-form-field class="example-full-width">
+    <mat-label> Name</mat-label>
+    <input formControlName="productName" matInput />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Category</mat-label>
+    <mat-select formControlName="category" placeholder="Category">
+      <mat-option value="iPhone"> iPhone </mat-option
+      ><mat-option value="Samsung"> Samsung </mat-option
+      ><mat-option value="Redmi"> Redmi </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input formControlName="date" matInput [matDatepicker]="picker" />
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-radio-group
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group"
+    formControlName="condition"
+  >
+    <mat-radio-button
+      class="example-radio-button"
+      *ngFor="let product of conditionProduct"
+      [value]="product"
+    >
+      {{ product }}
+    </mat-radio-button>
+  </mat-radio-group>
+  <mat-form-field class="example-full-width">
+    <mat-label> Price</mat-label>
+    <input formControlName="price" placeholder="$" matInput />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label> Comment</mat-label>
+    <textarea formControlName="comment" placeholder="smth" matInput>
+      </textarea>
+  </mat-form-field>
+  </form>
+ 
+</div>
+<div style="text-align: start;padding: 20px;" mat-dialog-actions>
+<button mat-raised-button color="warn" mat-dialog-close="">Close</button>
+<button mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>
